@@ -12,10 +12,6 @@ kubectl apply -f endereco-k8s/endereco-k8s-deployment.yaml
 kubectl apply -f endereco-k8s/endereco-k8s-service.yaml
 kubectl apply -f endereco-k8s/endereco-k8s-virtualservice.yaml
 
-#produto
-kubectl apply -f produto-k8s/produto-k8s-deployment.yaml
-kubectl apply -f produto-k8s/produto-k8s-service.yaml
-kubectl apply -f produto-k8s/produto-k8s-virtualservice.yaml
 
 #compra
 kubectl apply -f compra-k8s/compra-k8s-deployment.yaml
