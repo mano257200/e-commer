@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: compra-k8s 
-        image: markoshlima/compra-k8s:latest
+        image: mahendravarman12/shopping:compra
         imagePullPolicy: Never
         ports:
         - containerPort: 8080
