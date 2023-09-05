@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: endereco-k8s 
-        image: markoshlima/endereco-k8s:latest
+        image: mahendravarman12/shopping:enderco
         imagePullPolicy: Never
         ports:
           - containerPort: 8080
