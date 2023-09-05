@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: front-k8s-deployment
+  labels:
+    app: front-k8s-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: front-k8s-app
+  template:
+    metadata:
+      labels:
+        app: front-k8s-app
+    spec:
+      containers:
+      - name: front-k8s 
+        image: markoshlima/front-k8s:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8080

@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: produto-k8s-deployment
+  labels:
+    app: produto-k8s-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: produto-k8s-app
+  template:
+    metadata:
+      labels:
+        app: produto-k8s-app
+    spec:
+      containers:
+      - name: produto-k8s 
+        image: markoshlima/produto-k8s:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8080

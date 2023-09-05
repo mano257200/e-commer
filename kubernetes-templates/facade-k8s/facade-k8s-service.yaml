@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: facade-k8s-service
+  labels:
+    app: facade-k8s-app
+spec:
+  type: LoadBalancer
+  selector:
+    app: facade-k8s-app
+  ports:
+    - protocol: TCP
+      port: 5005
+      targetPort: 8080

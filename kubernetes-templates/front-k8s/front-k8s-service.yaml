@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: front-k8s-service
+  labels:
+    app: front-k8s-app
+spec:
+  type: LoadBalancer
+  selector:
+    app: front-k8s-app
+  ports:
+    - protocol: TCP
+      port: 5006
+      targetPort: 8080
