@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: cliente-k8s 
-        image: markoshlima/cliente-k8s:latest
+        image: mahendravarman12/shopping:cliente
         imagePullPolicy: Never
         ports:
         - containerPort: 8080
