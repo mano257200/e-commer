@@ -17,7 +17,7 @@ RUN pipenv install --deploy --ignore-pipfile
 COPY . /app/
 
 # Make the bootstrap script executable
-RUN chmod +x /app/produto/bootstrap.sh
+RUN chmod +x /app/produto-k8s/bootstrap.sh
 
 # Expose port 8080 for the Flask app
 EXPOSE 8080
