@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: facade-k8s 
-        image: markoshlima/facade-k8s:latest
+        image: mahendravarman12/shopping:facade
         imagePullPolicy: Never
         ports:
         - containerPort: 8080
