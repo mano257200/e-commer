@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: front-k8s 
-        image: markoshlima/front-k8s:latest
+        image: mahendravarman12/shopping:front
         imagePullPolicy: Never
         ports:
         - containerPort: 8080
